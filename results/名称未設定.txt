@@ -1,0 +1,44 @@
+https://www.kaggle.com/c/house-prices-advanced-regression-techniques/submit
+
+
+2Ensemmble_housePrice_forsubmissonが一番良い，
+
+Adjust2Ensemmble_housePrice_forsubmissonは，
+欠損値の処理で，NAを平均値とかじゃなくてNAにしたけど精度落ちた．あと，idのみdrop
+
+Log2Ensemmble_housePrice_forsubmisson 精度落ちた
+
+year+Log2Ensemmble_housePrice_forsubmisson 精度落ちた
+除く
+Utilities
+Condition2
+BsmtFinSF2
+LowQualFinSF
+BsmtFullBath
+BsmtHalfBath
+3SsnPorch
+ScreenPorch
+MiscFeature
+MiscVal
+YrSold MoSold
+
+YearBuilt+YearRemodAdd
+1stFlrSF+2ndFlrSF
+
+
+explainLOG+year+Log2Ensemmble_housePrice_forsubmisson
+説明変数も対数変換
+0.14016
+
+0110_housePrice_forsubmisson
+説明変数追加
+0.14071
+
+
+0110-2_housePrice_forsubmisson
+0.15884
+Drop　０．４
+
+0110-2_housePrice_forsubmisson-2
+0.15295
+Drop　0.3
